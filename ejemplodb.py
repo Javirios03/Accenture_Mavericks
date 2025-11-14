@@ -1,5 +1,6 @@
 from pymongo import MongoClient, errors
 
+# URI de conexión a MongoDB
 uri = "mongodb+srv://gabriellazovsky_db_user:67PdWTyuQV8tlRYR@clustermaverick.cymy94z.mongodb.net/?retryWrites=true&w=majority"
 
 client = MongoClient(uri)
@@ -16,11 +17,11 @@ try:
         "dni": "12345678A",
         "nombre": "Javier",
         "apellido": "Gonzalez",
-        "nombredeusuario": "javierg",     # Usuario único
-        "contraseña": "MiClaveSegura123", # Contraseña
-        "interes_hipoteca": 3.5,          # Interés de hipoteca (%)
-        "ahorro_aportado": 3.5,
-        "financiacion_necesaria": 3.5,
+        "nombredeusuario": "javierg",         # Usuario único
+        "contraseña": "MiClaveSegura123",     # Contraseña
+        "interes_hipoteca": 3.5,              # Interés de hipoteca (%)
+        "ahorro_aportado": 3.5,               # Ahorro aportado
+        "financiacion_necesaria": 3.5,        # Financiación necesaria
         "saldo": 1500.50,
         "cuentas": [
             {"tipo": "Ahorro", "numero": "ES12 3456 7890 1234", "saldo": 1200},
