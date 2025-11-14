@@ -1,0 +1,15 @@
+# Variables de entorno con credenciales
+.env
+
+# Datos de n8n (si se montan localmente)
+data/
+
+# Backups sensibles
+backup/*.json
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.swp
