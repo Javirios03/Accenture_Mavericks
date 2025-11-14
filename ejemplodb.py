@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+from pymongo import MongoClient, errors
 
 uri = "mongodb+srv://gabriellazovsky_db_user:67PdWTyuQV8tlRYR@clustermaverick.cymy94z.mongodb.net/?retryWrites=true&w=majority"
 
@@ -8,11 +8,16 @@ try:
     db = client["banco"]          # Base de datos "banco"
     clientes = db["clientes"]     # Colección "clientes"
 
+    # Crear índice único en nombredeusuario (si no existe)
+    clientes.create_index("nombredeusuario", unique=True)
+
     # ---------- INSERTAR ----------
     nuevo_cliente = {
         "dni": "12345678A",
         "nombre": "Javier",
         "apellido": "Gonzalez",
+        "nombredeusuario": "javierg",  # usuario único
+        "contraseña": "MiClaveSegura123",  # contraseña
         "saldo": 1500.50,
         "cuentas": [
             {"tipo": "Ahorro", "numero": "ES12 3456 7890 1234", "saldo": 1200},
@@ -20,11 +25,14 @@ try:
         ]
     }
 
-    resultado = clientes.insert_one(nuevo_cliente)
-    print("Cliente insertado con ID:", resultado.inserted_id)
+    try:
+        resultado = clientes.insert_one(nuevo_cliente)
+        print("Cliente insertado con ID:", resultado.inserted_id)
+    except errors.DuplicateKeyError:
+        print("Error: El nombredeusuario ya existe.")
 
     # ---------- LEER (FIND ONE) ----------
-    cliente = clientes.find_one({"dni": "12345678A"})
+    cliente = clientes.find_one({"nombredeusuario": "javierg"})
     print("\nCliente encontrado:")
     print(cliente)
 
