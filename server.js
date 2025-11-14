@@ -13,7 +13,7 @@ const SECRET_KEY = "clave_super_segura";
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/finsave";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/maverick";
 mongoose.connect(MONGODB_URI)
     .then(() => console.log("MongoDB conectado"))
     .catch(err => console.error("Error MongoDB:", err));
