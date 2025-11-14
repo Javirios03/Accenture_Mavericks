@@ -19,6 +19,8 @@ try:
         "nombredeusuario": "javierg",     # Usuario único
         "contraseña": "MiClaveSegura123", # Contraseña
         "interes_hipoteca": 3.5,          # Interés de hipoteca (%)
+        "ahorro_aportado": 3.5,
+        "financiacion_necesaria": 3.5,
         "saldo": 1500.50,
         "cuentas": [
             {"tipo": "Ahorro", "numero": "ES12 3456 7890 1234", "saldo": 1200},
