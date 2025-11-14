@@ -8,16 +8,17 @@ try:
     db = client["banco"]          # Base de datos "banco"
     clientes = db["clientes"]     # Colección "clientes"
 
-    # Crear índice único en nombredeusuario (si no existe)
-    clientes.create_index("nombredeusuario", unique=True)
+    # Crear índice único en nombredeusuario (ignora los documentos sin este campo)
+    clientes.create_index("nombredeusuario", unique=True, sparse=True)
 
     # ---------- INSERTAR ----------
     nuevo_cliente = {
         "dni": "12345678A",
         "nombre": "Javier",
         "apellido": "Gonzalez",
-        "nombredeusuario": "javierg",  # usuario único
-        "contraseña": "MiClaveSegura123",  # contraseña
+        "nombredeusuario": "javierg",     # Usuario único
+        "contraseña": "MiClaveSegura123", # Contraseña
+        "interes_hipoteca": 3.5,          # Interés de hipoteca (%)
         "saldo": 1500.50,
         "cuentas": [
             {"tipo": "Ahorro", "numero": "ES12 3456 7890 1234", "saldo": 1200},
@@ -29,7 +30,7 @@ try:
         resultado = clientes.insert_one(nuevo_cliente)
         print("Cliente insertado con ID:", resultado.inserted_id)
     except errors.DuplicateKeyError:
-        print("Error: El nombredeusuario ya existe.")
+        print("Error: El nombredeusuario ya existe. Se omite la inserción.")
 
     # ---------- LEER (FIND ONE) ----------
     cliente = clientes.find_one({"nombredeusuario": "javierg"})
