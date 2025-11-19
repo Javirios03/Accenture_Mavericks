@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Modal from "./components/Modal";
+import VoiceAgent from "./components/VoiceAgent";
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function App() {
         © 2025 Accenture — Soluciones de IA para Call Centers
       </footer>
 
-      {modalOpen && <Modal close={() => setModalOpen(false)} />}
+      {modalOpen && <VoiceAgent onClose={() => setModalOpen(false)} />}
     </>
   );
 }
