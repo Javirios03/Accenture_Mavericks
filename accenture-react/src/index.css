@@ -11,3 +11,18 @@ body {
   color: white;
   font-family: sans-serif;
 }
+
+/* Custom scrollbar */
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-gray-800 rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-purple-600 rounded-full hover:bg-purple-500;
+  }
+}
