@@ -49,9 +49,17 @@ print(c)
 
 python ejemplodb.py
 
-### 2. Ejecución del Frontend
+### 2. Ejecución del Backend
 
-Primero, asegúrate de tener Node.js y npm instalados (en caso contrario, descárgalos desde https://nodejs.org/). Luego, navega al directorio del frontend:
+Necesitamos ejecutar el servidor backend para manejar las solicitudes al agente de ElevenLabs. Para ello, en un terminal, navega al directorio raíz del proyecto y ejecuta:
+
+```bash
+python .\backend_agent.py
+```
+
+### 3. Ejecución del Frontend
+
+Primero, asegúrate de tener Node.js y npm instalados (en caso contrario, descárgalos desde https://nodejs.org/). Luego, **en un terminal distinto al del backend** navega al directorio del frontend:
 cd frontend
 
 Instala las dependencias necesarias:

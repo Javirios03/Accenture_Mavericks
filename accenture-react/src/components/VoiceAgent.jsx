@@ -1,7 +1,10 @@
+// VoiceAgent.jsx
 import { useConversation } from "@elevenlabs/react";
 import { useState, useEffect } from "react";
 import AudioOrb from "./AudioOrb";
 import TranscriptPanel from "./TranscriptPanel";
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 export default function VoiceAgent({ onClose }) {
   const [status, setStatus] = useState("disconnected");
@@ -28,8 +31,6 @@ export default function VoiceAgent({ onClose }) {
     },
     onMessage: (message) => {
       console.log("Mensaje recibido:", message);
-
-      // Agregar mensaje a la transcripción
       setMessages((prev) => [
         ...prev,
         {
@@ -39,18 +40,16 @@ export default function VoiceAgent({ onClose }) {
         },
       ]);
     },
-    // Detectar cuando el agente está hablando
     onModeChange: ({ mode }) => {
       setIsSpeaking(mode === "speaking");
     },
   });
 
-  // Simular detección de volumen de audio (puedes implementar análisis real con Web Audio API)
   useEffect(() => {
     let interval;
     if (isSpeaking) {
       interval = setInterval(() => {
-        setAudioVolume(Math.random() * 0.8 + 0.2); // Simulación
+        setAudioVolume(Math.random() * 0.8 + 0.2);
       }, 100);
     } else {
       setAudioVolume(0);
@@ -61,13 +60,31 @@ export default function VoiceAgent({ onClose }) {
   const startConversation = async () => {
     try {
       setError("");
-      // Solicitar permisos de micrófono primero
+      setStatus("connecting");
+
+      // 1. Solicitar permisos de micrófono
       await navigator.mediaDevices.getUserMedia({ audio: true });
 
-      // Iniciar conversación con el agente
+      // 2. Obtener signed URL del backend
+      console.log("Solicitando signed URL al backend...");
+      const response = await fetch(`${BACKEND_URL}/api/get-signed-url`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Error al obtener signed URL");
+      }
+
+      const { signed_url } = await response.json();
+      console.log("Signed URL obtenida exitosamente");
+
+      // 3. Iniciar conversación con la signed URL
       const conversationId = await conversation.startSession({
-        agentId: import.meta.env.VITE_ELEVENLABS_AGENT_ID,
-        connectionType: "webrtc",
+        signedUrl: signed_url, // ← Cambio crítico: usar signedUrl en lugar de agentId
       });
 
       console.log("Conversación iniciada:", conversationId);
@@ -79,7 +96,9 @@ export default function VoiceAgent({ onClose }) {
         },
       ]);
     } catch (err) {
+      console.error("Error completo:", err);
       setError("Error al iniciar conversación: " + err.message);
+      setStatus("error");
     }
   };
 
@@ -146,11 +165,8 @@ export default function VoiceAgent({ onClose }) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Panel izquierdo - Orbe y controles */}
           <div className="flex flex-col items-center justify-center space-y-6">
-            {/* Audio Orb */}
             <div className="relative">
               <AudioOrb isSpeaking={isSpeaking} volume={audioVolume} />
-
-              {/* Status indicator */}
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
                 {status === "connected" && (
                   <span
@@ -161,6 +177,11 @@ export default function VoiceAgent({ onClose }) {
                     }`}
                   >
                     {isSpeaking ? "🎤 Escuchando..." : "💬 Conectado"}
+                  </span>
+                )}
+                {status === "connecting" && (
+                  <span className="px-4 py-2 rounded-full text-sm font-medium bg-yellow-600/80 text-white">
+                    🔄 Conectando...
                   </span>
                 )}
               </div>
@@ -179,6 +200,7 @@ export default function VoiceAgent({ onClose }) {
                 <button
                   onClick={endConversation}
                   className="px-8 py-4 bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 rounded-xl shadow-lg font-semibold text-lg transition-all transform hover:scale-105 active:scale-95"
+                  disabled={status === "connecting"}
                 >
                   ⏹️ Finalizar
                 </button>
@@ -203,7 +225,6 @@ export default function VoiceAgent({ onClose }) {
           <div className="flex flex-col">
             <TranscriptPanel messages={messages} />
 
-            {/* Stats */}
             {status === "connected" && (
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
