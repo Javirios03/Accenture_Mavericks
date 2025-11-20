@@ -1,5 +1,4 @@
 # Archivos de entorno con credenciales
-.env
 n8n/.env
 
 # Dependencias de Node.js
