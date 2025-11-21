@@ -15,7 +15,7 @@ export default function App() {
       <Contact />
 
       <footer className="py-10 text-center bg-black border-t border-purple-800 text-gray-400">
-        © 2025 Accenture — Soluciones de IA para Call Centers
+        © 2025 CallMe — Soluciones de IA para Call Centers
       </footer>
 
       {modalOpen && <VoiceAgent onClose={() => setModalOpen(false)} />}
