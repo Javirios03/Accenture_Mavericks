@@ -1,0 +1,820 @@
+{
+  "descripcion": "Base de conocimientos completa con condiciones de hipoteca predichas para clientes bancarios",
+  "generado_el": "21/11/2025 12:36:44",
+  "total_clientes": 21,
+  "clientes": [
+    {
+      "nombre_completo": "Javier Martinez",
+      "nombre": "Javier",
+      "apellido": "Martinez",
+      "dni": "18327602S",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.11%",
+        "tipo_prestamo": "Fijo",
+        "periodo_revision": null,
+        "plazo_anios": 30,
+        "financiacion_necesaria": "6,115.57€",
+        "valor_vivienda": "8,843.35€",
+        "ahorro_aportado": "2,727.78€",
+        "cuota_mensual": "29.59€",
+        "total_a_pagar": "10,652.40€",
+        "total_intereses": "4,536.83€",
+        "ltv": "69.20%",
+        "dti": "41.00%",
+        "esfuerzo_mensual": "0.97%",
+        "comision_apertura": "60.33€",
+        "comision_amortizacion_anticipada": "Sin penalización",
+        "gastos_iniciales": {
+          "notaria": "811.90€",
+          "registro": "560.39€",
+          "tasacion": "253.84€",
+          "gestoria": "391.51€",
+          "total": "2,077.97€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Aprobado",
+        "fecha_solicitud": "29/10/2025",
+        "valido_hasta": "03/02/2026",
+        "ingresos_mensuales": "3,048.27€"
+      },
+      "resumen": "Hipoteca para Javier Martinez (DNI: 18327602S): Tipo 4.11% Fijo, cuota mensual de 29.59€, plazo de 30 años. Estado: Aprobado."
+    },
+    {
+      "nombre_completo": "Javier Gonzalez",
+      "nombre": "Javier",
+      "apellido": "Gonzalez",
+      "dni": "16405626P",
+      "condiciones_hipoteca": {
+        "tipo_interes": "3.65%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 30,
+        "financiacion_necesaria": "4,102.07€",
+        "valor_vivienda": "9,050.66€",
+        "ahorro_aportado": "4,948.59€",
+        "cuota_mensual": "18.77€",
+        "total_a_pagar": "6,757.20€",
+        "total_intereses": "2,655.13€",
+        "ltv": "45.30%",
+        "dti": "78.90%",
+        "esfuerzo_mensual": "1.26%",
+        "comision_apertura": "27.76€",
+        "comision_amortizacion_anticipada": "0.5% parcial / 1% total",
+        "gastos_iniciales": {
+          "notaria": "867.09€",
+          "registro": "448.91€",
+          "tasacion": "262.49€",
+          "gestoria": "348.11€",
+          "total": "1,954.37€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Aprobado",
+        "fecha_solicitud": "13/11/2025",
+        "valido_hasta": "15/01/2026",
+        "ingresos_mensuales": "1,486.67€"
+      },
+      "resumen": "Hipoteca para Javier Gonzalez (DNI: 16405626P): Tipo 3.65% Variable (Euribor + 1.2%), cuota mensual de 18.77€, plazo de 30 años. Estado: Aprobado."
+    },
+    {
+      "nombre_completo": "Miguel Perez",
+      "nombre": "Miguel",
+      "apellido": "Perez",
+      "dni": "80487326I",
+      "condiciones_hipoteca": {
+        "tipo_interes": "2.62%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 20,
+        "financiacion_necesaria": "2,081.10€",
+        "valor_vivienda": "2,963.39€",
+        "ahorro_aportado": "882.29€",
+        "cuota_mensual": "11.15€",
+        "total_a_pagar": "2,676.00€",
+        "total_intereses": "594.90€",
+        "ltv": "70.20%",
+        "dti": "28.20%",
+        "esfuerzo_mensual": "0.24%",
+        "comision_apertura": "10.53€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "798.92€",
+          "registro": "581.83€",
+          "tasacion": "318.59€",
+          "gestoria": "360.65€",
+          "total": "2,070.52€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina",
+          "Seguro de hogar",
+          "Seguro de vida"
+        ],
+        "estado": "En estudio",
+        "fecha_solicitud": "25/10/2025",
+        "valido_hasta": "11/02/2026",
+        "ingresos_mensuales": "4,638.83€"
+      },
+      "resumen": "Hipoteca para Miguel Perez (DNI: 80487326I): Tipo 2.62% Variable (Euribor + 1.2%), cuota mensual de 11.15€, plazo de 20 años. Estado: En estudio."
+    },
+    {
+      "nombre_completo": "Laura Perez",
+      "nombre": "Laura",
+      "apellido": "Perez",
+      "dni": "57055548G",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.47%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 15,
+        "financiacion_necesaria": "5,738.18€",
+        "valor_vivienda": "8,742.94€",
+        "ahorro_aportado": "3,004.76€",
+        "cuota_mensual": "43.81€",
+        "total_a_pagar": "7,885.80€",
+        "total_intereses": "2,147.62€",
+        "ltv": "65.60%",
+        "dti": "35.40%",
+        "esfuerzo_mensual": "0.82%",
+        "comision_apertura": "47.03€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "848.55€",
+          "registro": "788.63€",
+          "tasacion": "273.67€",
+          "gestoria": "344.89€",
+          "total": "2,302.77€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Pre-aprobado",
+        "fecha_solicitud": "12/11/2025",
+        "valido_hasta": "19/02/2026",
+        "ingresos_mensuales": "5,340.32€"
+      },
+      "resumen": "Hipoteca para Laura Perez (DNI: 57055548G): Tipo 4.47% Variable (Euribor + 1.2%), cuota mensual de 43.81€, plazo de 15 años. Estado: Pre-aprobado."
+    },
+    {
+      "nombre_completo": "Javier Gonzalez",
+      "nombre": "Javier",
+      "apellido": "Gonzalez",
+      "dni": "44117652C",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.17%",
+        "tipo_prestamo": "Mixto (5 años fijo)",
+        "periodo_revision": "5 años",
+        "plazo_anios": 25,
+        "financiacion_necesaria": "1,382.95€",
+        "valor_vivienda": "4,016.35€",
+        "ahorro_aportado": "2,633.40€",
+        "cuota_mensual": "7.43€",
+        "total_a_pagar": "2,229.00€",
+        "total_intereses": "846.05€",
+        "ltv": "34.40%",
+        "dti": "39.70%",
+        "esfuerzo_mensual": "0.31%",
+        "comision_apertura": "10.01€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "1,013.84€",
+          "registro": "595.15€",
+          "tasacion": "342.97€",
+          "gestoria": "439.56€",
+          "total": "2,401.54€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Aprobado",
+        "fecha_solicitud": "14/11/2025",
+        "valido_hasta": "21/01/2026",
+        "ingresos_mensuales": "2,394.19€"
+      },
+      "resumen": "Hipoteca para Javier Gonzalez (DNI: 44117652C): Tipo 4.17% Mixto (5 años fijo), cuota mensual de 7.43€, plazo de 25 años. Estado: Aprobado."
+    },
+    {
+      "nombre_completo": "Ana Lopez",
+      "nombre": "Ana",
+      "apellido": "Lopez",
+      "dni": "78280538Y",
+      "condiciones_hipoteca": {
+        "tipo_interes": "2.97%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 30,
+        "financiacion_necesaria": "8,321.70€",
+        "valor_vivienda": "9,998.05€",
+        "ahorro_aportado": "1,676.35€",
+        "cuota_mensual": "34.95€",
+        "total_a_pagar": "12,582.00€",
+        "total_intereses": "4,260.30€",
+        "ltv": "83.20%",
+        "dti": "30.70%",
+        "esfuerzo_mensual": "1.18%",
+        "comision_apertura": "65.66€",
+        "comision_amortizacion_anticipada": "Sin penalización",
+        "gastos_iniciales": {
+          "notaria": "764.21€",
+          "registro": "669.70€",
+          "tasacion": "262.97€",
+          "gestoria": "508.74€",
+          "total": "2,271.29€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina",
+          "Seguro de hogar",
+          "Seguro de vida"
+        ],
+        "estado": "En estudio",
+        "fecha_solicitud": "09/11/2025",
+        "valido_hasta": "28/01/2026",
+        "ingresos_mensuales": "2,952.51€"
+      },
+      "resumen": "Hipoteca para Ana Lopez (DNI: 78280538Y): Tipo 2.97% Variable (Euribor + 1.2%), cuota mensual de 34.95€, plazo de 30 años. Estado: En estudio."
+    },
+    {
+      "nombre_completo": "Carlos Martinez",
+      "nombre": "Carlos",
+      "apellido": "Martinez",
+      "dni": "99184006A",
+      "condiciones_hipoteca": {
+        "tipo_interes": "2.54%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 10,
+        "financiacion_necesaria": "4,484.54€",
+        "valor_vivienda": "7,101.06€",
+        "ahorro_aportado": "2,616.52€",
+        "cuota_mensual": "42.36€",
+        "total_a_pagar": "5,083.20€",
+        "total_intereses": "598.66€",
+        "ltv": "63.20%",
+        "dti": "30.30%",
+        "esfuerzo_mensual": "1.28%",
+        "comision_apertura": "30.32€",
+        "comision_amortizacion_anticipada": "0.5% parcial / 1% total",
+        "gastos_iniciales": {
+          "notaria": "1,135.34€",
+          "registro": "678.34€",
+          "tasacion": "397.32€",
+          "gestoria": "440.55€",
+          "total": "2,681.87€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina",
+          "Seguro de hogar",
+          "Seguro de vida"
+        ],
+        "estado": "En estudio",
+        "fecha_solicitud": "14/11/2025",
+        "valido_hasta": "19/02/2026",
+        "ingresos_mensuales": "3,303.65€"
+      },
+      "resumen": "Hipoteca para Carlos Martinez (DNI: 99184006A): Tipo 2.54% Variable (Euribor + 1.2%), cuota mensual de 42.36€, plazo de 10 años. Estado: En estudio."
+    },
+    {
+      "nombre_completo": "Miguel Lopez",
+      "nombre": "Miguel",
+      "apellido": "Lopez",
+      "dni": "41042492R",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.09%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 10,
+        "financiacion_necesaria": "7,144.12€",
+        "valor_vivienda": "8,031.09€",
+        "ahorro_aportado": "886.97€",
+        "cuota_mensual": "72.64€",
+        "total_a_pagar": "8,716.80€",
+        "total_intereses": "1,572.68€",
+        "ltv": "89.00%",
+        "dti": "14.60%",
+        "esfuerzo_mensual": "2.25%",
+        "comision_apertura": "36.62€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "928.43€",
+          "registro": "799.85€",
+          "tasacion": "360.81€",
+          "gestoria": "318.18€",
+          "total": "2,443.89€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "En estudio",
+        "fecha_solicitud": "10/11/2025",
+        "valido_hasta": "13/01/2026",
+        "ingresos_mensuales": "3,224.37€"
+      },
+      "resumen": "Hipoteca para Miguel Lopez (DNI: 41042492R): Tipo 4.09% Variable (Euribor + 1.2%), cuota mensual de 72.64€, plazo de 10 años. Estado: En estudio."
+    },
+    {
+      "nombre_completo": "Laura Perez",
+      "nombre": "Laura",
+      "apellido": "Perez",
+      "dni": "73834280P",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.08%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 30,
+        "financiacion_necesaria": "4,693.48€",
+        "valor_vivienda": "8,636.79€",
+        "ahorro_aportado": "3,943.31€",
+        "cuota_mensual": "22.62€",
+        "total_a_pagar": "8,143.20€",
+        "total_intereses": "3,449.72€",
+        "ltv": "54.30%",
+        "dti": "10.40%",
+        "esfuerzo_mensual": "0.50%",
+        "comision_apertura": "32.08€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "962.55€",
+          "registro": "458.10€",
+          "tasacion": "254.96€",
+          "gestoria": "517.92€",
+          "total": "2,225.60€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "En estudio",
+        "fecha_solicitud": "30/10/2025",
+        "valido_hasta": "31/12/2025",
+        "ingresos_mensuales": "4,563.61€"
+      },
+      "resumen": "Hipoteca para Laura Perez (DNI: 73834280P): Tipo 4.08% Variable (Euribor + 1.2%), cuota mensual de 22.62€, plazo de 30 años. Estado: En estudio."
+    },
+    {
+      "nombre_completo": "Javier Lopez",
+      "nombre": "Javier",
+      "apellido": "Lopez",
+      "dni": "91543250B",
+      "condiciones_hipoteca": {
+        "tipo_interes": "3.45%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 10,
+        "financiacion_necesaria": "2,966.38€",
+        "valor_vivienda": "4,835.38€",
+        "ahorro_aportado": "1,869.00€",
+        "cuota_mensual": "29.26€",
+        "total_a_pagar": "3,511.20€",
+        "total_intereses": "544.82€",
+        "ltv": "61.30%",
+        "dti": "11.70%",
+        "esfuerzo_mensual": "0.79%",
+        "comision_apertura": "26.50€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "845.17€",
+          "registro": "502.34€",
+          "tasacion": "383.17€",
+          "gestoria": "482.85€",
+          "total": "2,240.03€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina",
+          "Seguro de hogar"
+        ],
+        "estado": "En estudio",
+        "fecha_solicitud": "11/11/2025",
+        "valido_hasta": "24/12/2025",
+        "ingresos_mensuales": "3,722.12€"
+      },
+      "resumen": "Hipoteca para Javier Lopez (DNI: 91543250B): Tipo 3.45% Variable (Euribor + 1.2%), cuota mensual de 29.26€, plazo de 10 años. Estado: En estudio."
+    },
+    {
+      "nombre_completo": "Javier Ramirez",
+      "nombre": "Javier",
+      "apellido": "Ramirez",
+      "dni": "31467298S",
+      "condiciones_hipoteca": {
+        "tipo_interes": "3.98%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 20,
+        "financiacion_necesaria": "2,825.12€",
+        "valor_vivienda": "5,349.37€",
+        "ahorro_aportado": "2,524.25€",
+        "cuota_mensual": "17.09€",
+        "total_a_pagar": "4,101.60€",
+        "total_intereses": "1,276.48€",
+        "ltv": "52.80%",
+        "dti": "29.70%",
+        "esfuerzo_mensual": "0.33%",
+        "comision_apertura": "21.78€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "1,047.54€",
+          "registro": "642.03€",
+          "tasacion": "363.99€",
+          "gestoria": "524.02€",
+          "total": "2,599.36€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Pre-aprobado",
+        "fecha_solicitud": "14/11/2025",
+        "valido_hasta": "19/02/2026",
+        "ingresos_mensuales": "5,228.27€"
+      },
+      "resumen": "Hipoteca para Javier Ramirez (DNI: 31467298S): Tipo 3.98% Variable (Euribor + 1.2%), cuota mensual de 17.09€, plazo de 20 años. Estado: Pre-aprobado."
+    },
+    {
+      "nombre_completo": "Javier Martinez",
+      "nombre": "Javier",
+      "apellido": "Martinez",
+      "dni": "43090099G",
+      "condiciones_hipoteca": {
+        "tipo_interes": "2.25%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 20,
+        "financiacion_necesaria": "6,991.72€",
+        "valor_vivienda": "11,853.35€",
+        "ahorro_aportado": "4,861.63€",
+        "cuota_mensual": "36.20€",
+        "total_a_pagar": "8,688.00€",
+        "total_intereses": "1,696.28€",
+        "ltv": "59.00%",
+        "dti": "48.40%",
+        "esfuerzo_mensual": "0.98%",
+        "comision_apertura": "68.18€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "850.50€",
+          "registro": "598.03€",
+          "tasacion": "296.53€",
+          "gestoria": "456.47€",
+          "total": "2,269.70€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina",
+          "Seguro de hogar",
+          "Seguro de vida"
+        ],
+        "estado": "Pre-aprobado",
+        "fecha_solicitud": "24/10/2025",
+        "valido_hasta": "04/02/2026",
+        "ingresos_mensuales": "3,705.30€"
+      },
+      "resumen": "Hipoteca para Javier Martinez (DNI: 43090099G): Tipo 2.25% Variable (Euribor + 1.2%), cuota mensual de 36.20€, plazo de 20 años. Estado: Pre-aprobado."
+    },
+    {
+      "nombre_completo": "Laura Martinez",
+      "nombre": "Laura",
+      "apellido": "Martinez",
+      "dni": "24386777R",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.31%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 30,
+        "financiacion_necesaria": "5,707.52€",
+        "valor_vivienda": "8,883.16€",
+        "ahorro_aportado": "3,175.64€",
+        "cuota_mensual": "28.28€",
+        "total_a_pagar": "10,180.80€",
+        "total_intereses": "4,473.28€",
+        "ltv": "64.30%",
+        "dti": "49.20%",
+        "esfuerzo_mensual": "1.86%",
+        "comision_apertura": "37.30€",
+        "comision_amortizacion_anticipada": "Sin penalización",
+        "gastos_iniciales": {
+          "notaria": "1,000.17€",
+          "registro": "672.98€",
+          "tasacion": "274.86€",
+          "gestoria": "381.94€",
+          "total": "2,367.25€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Aprobado",
+        "fecha_solicitud": "01/11/2025",
+        "valido_hasta": "08/01/2026",
+        "ingresos_mensuales": "1,523.26€"
+      },
+      "resumen": "Hipoteca para Laura Martinez (DNI: 24386777R): Tipo 4.31% Variable (Euribor + 1.2%), cuota mensual de 28.28€, plazo de 30 años. Estado: Aprobado."
+    },
+    {
+      "nombre_completo": "Carlos Martinez",
+      "nombre": "Carlos",
+      "apellido": "Martinez",
+      "dni": "15513548Q",
+      "condiciones_hipoteca": {
+        "tipo_interes": "2.14%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 15,
+        "financiacion_necesaria": "3,139.96€",
+        "valor_vivienda": "4,110.56€",
+        "ahorro_aportado": "970.60€",
+        "cuota_mensual": "20.41€",
+        "total_a_pagar": "3,673.80€",
+        "total_intereses": "533.84€",
+        "ltv": "76.40%",
+        "dti": "18.20%",
+        "esfuerzo_mensual": "0.36%",
+        "comision_apertura": "18.64€",
+        "comision_amortizacion_anticipada": "0.5% parcial / 1% total",
+        "gastos_iniciales": {
+          "notaria": "1,080.96€",
+          "registro": "504.03€",
+          "tasacion": "397.81€",
+          "gestoria": "304.01€",
+          "total": "2,305.45€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina",
+          "Seguro de hogar",
+          "Seguro de vida"
+        ],
+        "estado": "Pre-aprobado",
+        "fecha_solicitud": "16/11/2025",
+        "valido_hasta": "15/02/2026",
+        "ingresos_mensuales": "5,656.80€"
+      },
+      "resumen": "Hipoteca para Carlos Martinez (DNI: 15513548Q): Tipo 2.14% Variable (Euribor + 1.2%), cuota mensual de 20.41€, plazo de 15 años. Estado: Pre-aprobado."
+    },
+    {
+      "nombre_completo": "Ana Gonzalez",
+      "nombre": "Ana",
+      "apellido": "Gonzalez",
+      "dni": "66605139W",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.21%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 15,
+        "financiacion_necesaria": "8,098.10€",
+        "valor_vivienda": "11,485.11€",
+        "ahorro_aportado": "3,387.01€",
+        "cuota_mensual": "60.76€",
+        "total_a_pagar": "10,936.80€",
+        "total_intereses": "2,838.70€",
+        "ltv": "70.50%",
+        "dti": "29.00%",
+        "esfuerzo_mensual": "1.37%",
+        "comision_apertura": "61.51€",
+        "comision_amortizacion_anticipada": "Sin penalización",
+        "gastos_iniciales": {
+          "notaria": "768.77€",
+          "registro": "665.51€",
+          "tasacion": "267.59€",
+          "gestoria": "523.89€",
+          "total": "2,287.27€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Aprobado",
+        "fecha_solicitud": "30/10/2025",
+        "valido_hasta": "23/12/2025",
+        "ingresos_mensuales": "4,441.27€"
+      },
+      "resumen": "Hipoteca para Ana Gonzalez (DNI: 66605139W): Tipo 4.21% Variable (Euribor + 1.2%), cuota mensual de 60.76€, plazo de 15 años. Estado: Aprobado."
+    },
+    {
+      "nombre_completo": "Ana Martinez",
+      "nombre": "Ana",
+      "apellido": "Martinez",
+      "dni": "92418319K",
+      "condiciones_hipoteca": {
+        "tipo_interes": "3.91%",
+        "tipo_prestamo": "Mixto (5 años fijo)",
+        "periodo_revision": "5 años",
+        "plazo_anios": 20,
+        "financiacion_necesaria": "9,932.98€",
+        "valor_vivienda": "13,326.89€",
+        "ahorro_aportado": "3,393.91€",
+        "cuota_mensual": "59.72€",
+        "total_a_pagar": "14,332.80€",
+        "total_intereses": "4,399.82€",
+        "ltv": "74.50%",
+        "dti": "95.00%",
+        "esfuerzo_mensual": "3.54%",
+        "comision_apertura": "95.16€",
+        "comision_amortizacion_anticipada": "Sin penalización",
+        "gastos_iniciales": {
+          "notaria": "742.43€",
+          "registro": "757.58€",
+          "tasacion": "301.81€",
+          "gestoria": "497.84€",
+          "total": "2,394.82€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Pre-aprobado",
+        "fecha_solicitud": "05/11/2025",
+        "valido_hasta": "26/01/2026",
+        "ingresos_mensuales": "1,684.66€"
+      },
+      "resumen": "Hipoteca para Ana Martinez (DNI: 92418319K): Tipo 3.91% Mixto (5 años fijo), cuota mensual de 59.72€, plazo de 20 años. Estado: Pre-aprobado."
+    },
+    {
+      "nombre_completo": "Javier Ramirez",
+      "nombre": "Javier",
+      "apellido": "Ramirez",
+      "dni": "98856327F",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.23%",
+        "tipo_prestamo": "Mixto (5 años fijo)",
+        "periodo_revision": "5 años",
+        "plazo_anios": 25,
+        "financiacion_necesaria": "8,143.48€",
+        "valor_vivienda": "10,736.01€",
+        "ahorro_aportado": "2,592.53€",
+        "cuota_mensual": "44.03€",
+        "total_a_pagar": "13,209.00€",
+        "total_intereses": "5,065.52€",
+        "ltv": "75.90%",
+        "dti": "24.20%",
+        "esfuerzo_mensual": "0.78%",
+        "comision_apertura": "44.25€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "620.63€",
+          "registro": "793.63€",
+          "tasacion": "388.61€",
+          "gestoria": "552.11€",
+          "total": "2,399.24€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "En estudio",
+        "fecha_solicitud": "25/10/2025",
+        "valido_hasta": "22/01/2026",
+        "ingresos_mensuales": "5,670.33€"
+      },
+      "resumen": "Hipoteca para Javier Ramirez (DNI: 98856327F): Tipo 4.23% Mixto (5 años fijo), cuota mensual de 44.03€, plazo de 25 años. Estado: En estudio."
+    },
+    {
+      "nombre_completo": "Ana Lopez",
+      "nombre": "Ana",
+      "apellido": "Lopez",
+      "dni": "91978126Q",
+      "condiciones_hipoteca": {
+        "tipo_interes": "3.71%",
+        "tipo_prestamo": "Fijo",
+        "periodo_revision": null,
+        "plazo_anios": 15,
+        "financiacion_necesaria": "3,591.72€",
+        "valor_vivienda": "8,544.47€",
+        "ahorro_aportado": "4,952.75€",
+        "cuota_mensual": "26.05€",
+        "total_a_pagar": "4,689.00€",
+        "total_intereses": "1,097.28€",
+        "ltv": "42.00%",
+        "dti": "56.50%",
+        "esfuerzo_mensual": "0.91%",
+        "comision_apertura": "26.88€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "1,014.48€",
+          "registro": "660.63€",
+          "tasacion": "397.84€",
+          "gestoria": "501.62€",
+          "total": "2,601.44€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Aprobado",
+        "fecha_solicitud": "03/11/2025",
+        "valido_hasta": "16/01/2026",
+        "ingresos_mensuales": "2,866.33€"
+      },
+      "resumen": "Hipoteca para Ana Lopez (DNI: 91978126Q): Tipo 3.71% Fijo, cuota mensual de 26.05€, plazo de 15 años. Estado: Aprobado."
+    },
+    {
+      "nombre_completo": "Javier Ramirez",
+      "nombre": "Javier",
+      "apellido": "Ramirez",
+      "dni": "99537503Q",
+      "condiciones_hipoteca": {
+        "tipo_interes": "2.19%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 10,
+        "financiacion_necesaria": "5,758.44€",
+        "valor_vivienda": "7,494.83€",
+        "ahorro_aportado": "1,736.39€",
+        "cuota_mensual": "53.48€",
+        "total_a_pagar": "6,417.60€",
+        "total_intereses": "659.16€",
+        "ltv": "76.80%",
+        "dti": "20.80%",
+        "esfuerzo_mensual": "1.33%",
+        "comision_apertura": "52.62€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "928.74€",
+          "registro": "451.70€",
+          "tasacion": "335.95€",
+          "gestoria": "476.50€",
+          "total": "2,245.52€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina",
+          "Seguro de hogar",
+          "Seguro de vida"
+        ],
+        "estado": "Aprobado",
+        "fecha_solicitud": "10/11/2025",
+        "valido_hasta": "23/01/2026",
+        "ingresos_mensuales": "4,010.46€"
+      },
+      "resumen": "Hipoteca para Javier Ramirez (DNI: 99537503Q): Tipo 2.19% Variable (Euribor + 1.2%), cuota mensual de 53.48€, plazo de 10 años. Estado: Aprobado."
+    },
+    {
+      "nombre_completo": "Ana Ramirez",
+      "nombre": "Ana",
+      "apellido": "Ramirez",
+      "dni": "43661800W",
+      "condiciones_hipoteca": {
+        "tipo_interes": "2.2%",
+        "tipo_prestamo": "Variable (Euribor + 1.2%)",
+        "periodo_revision": "Anual",
+        "plazo_anios": 20,
+        "financiacion_necesaria": "5,902.59€",
+        "valor_vivienda": "9,940.97€",
+        "ahorro_aportado": "4,038.38€",
+        "cuota_mensual": "30.42€",
+        "total_a_pagar": "7,300.80€",
+        "total_intereses": "1,398.21€",
+        "ltv": "59.40%",
+        "dti": "35.00%",
+        "esfuerzo_mensual": "0.79%",
+        "comision_apertura": "38.29€",
+        "comision_amortizacion_anticipada": "Sin penalización",
+        "gastos_iniciales": {
+          "notaria": "1,091.77€",
+          "registro": "617.08€",
+          "tasacion": "357.64€",
+          "gestoria": "506.79€",
+          "total": "2,611.56€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina",
+          "Seguro de hogar",
+          "Seguro de vida"
+        ],
+        "estado": "Pre-aprobado",
+        "fecha_solicitud": "12/11/2025",
+        "valido_hasta": "29/12/2025",
+        "ingresos_mensuales": "3,856.83€"
+      },
+      "resumen": "Hipoteca para Ana Ramirez (DNI: 43661800W): Tipo 2.2% Variable (Euribor + 1.2%), cuota mensual de 30.42€, plazo de 20 años. Estado: Pre-aprobado."
+    },
+    {
+      "nombre_completo": "Francisco Javier Ríos",
+      "nombre": "Francisco Javier",
+      "apellido": "Ríos",
+      "dni": "12345678A",
+      "condiciones_hipoteca": {
+        "tipo_interes": "4.25%",
+        "tipo_prestamo": "Mixto (5 años fijo)",
+        "periodo_revision": "5 años",
+        "plazo_anios": 30,
+        "financiacion_necesaria": "150,373.18€",
+        "valor_vivienda": "163,632.53€",
+        "ahorro_aportado": "13,259.35€",
+        "cuota_mensual": "739.75€",
+        "total_a_pagar": "266,310.00€",
+        "total_intereses": "115,936.82€",
+        "ltv": "91.90%",
+        "dti": "26.80%",
+        "esfuerzo_mensual": "20.42%",
+        "comision_apertura": "874.10€",
+        "comision_amortizacion_anticipada": "0%",
+        "gastos_iniciales": {
+          "notaria": "806.16€",
+          "registro": "695.67€",
+          "tasacion": "259.07€",
+          "gestoria": "582.64€",
+          "total": "3,217.63€"
+        },
+        "productos_vinculados": [
+          "Domiciliación de nómina"
+        ],
+        "estado": "Aprobado",
+        "fecha_solicitud": "23/10/2025",
+        "valido_hasta": "21/01/2026",
+        "ingresos_mensuales": "3,623.21€"
+      },
+      "resumen": "Hipoteca para Francisco Javier Ríos (DNI: 12345678A): Tipo 4.25% Mixto (5 años fijo), cuota mensual de 739.75€, plazo de 30 años. Estado: Aprobado."
+    }
+  ]
+}
