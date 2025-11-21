@@ -3,7 +3,7 @@ import random
 import string
 
 # Conexión a MongoDB
-uri = "mongodb+srv://gabriellazovsky_db_user:67PdWTyuQV8tlRYR@clustermaverick.cymy94z.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://javierriosmontes_db_user:FKxFGWWMhsZMCycb@accenturecluster.zfw78s2.mongodb.net/?appName=AccentureCluster"
 client = MongoClient(uri)
 
 def generar_usuario(nombre, apellido, existentes):

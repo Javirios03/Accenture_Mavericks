@@ -1,10 +1,17 @@
-// VoiceAgent.jsx
+// VoiceAgent.jsx - VERSIÓN CORREGIDA (Quita tags XML y contador de mensajes)
 import { useConversation } from "@elevenlabs/react";
 import { useState, useEffect } from "react";
 import AudioOrb from "./AudioOrb";
 import TranscriptPanel from "./TranscriptPanel";
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+
+// ✅ Función para limpiar tags XML del contenido
+const cleanXMLTags = (text) => {
+  if (!text) return "";
+  // Eliminar todos los tags XML como <Hipotecas>, </Hipotecas>, etc.
+  return text.replace(/<\/?[^>]+(>|$)/g, "").trim();
+};
 
 export default function VoiceAgent({ onClose }) {
   const [status, setStatus] = useState("disconnected");
@@ -31,14 +38,22 @@ export default function VoiceAgent({ onClose }) {
     },
     onMessage: (message) => {
       console.log("Mensaje recibido:", message);
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: message.source || "agent",
-          content: message.message || message.text || "",
-          timestamp: Date.now(),
-        },
-      ]);
+
+      // ✅ Limpiar el contenido de tags XML antes de añadirlo
+      const rawContent = message.message || message.text || "";
+      const cleanedContent = cleanXMLTags(rawContent);
+
+      // Solo añadir el mensaje si tiene contenido después de limpiar
+      if (cleanedContent) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: message.source || "agent",
+            content: cleanedContent,
+            timestamp: Date.now(),
+          },
+        ]);
+      }
     },
     onModeChange: ({ mode }) => {
       setIsSpeaking(mode === "speaking");
@@ -84,7 +99,7 @@ export default function VoiceAgent({ onClose }) {
 
       // 3. Iniciar conversación con la signed URL
       const conversationId = await conversation.startSession({
-        signedUrl: signed_url, // ← Cambio crítico: usar signedUrl en lugar de agentId
+        signedUrl: signed_url,
       });
 
       console.log("Conversación iniciada:", conversationId);
@@ -225,24 +240,20 @@ export default function VoiceAgent({ onClose }) {
           <div className="flex flex-col">
             <TranscriptPanel messages={messages} />
 
+            {/* ✅ ELIMINADO: Contador de mensajes y volumen */}
+            {/* Solo mostramos el volumen ahora */}
             {status === "connected" && (
-              <div className="mt-4 grid grid-cols-2 gap-3">
-                <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                  <p className="text-xs text-gray-400">Mensajes</p>
-                  <p className="text-2xl font-bold text-purple-400">
-                    {messages.length}
-                  </p>
-                </div>
-                <div className="bg-gray-800/50 rounded-lg p-3 border border-gray-700">
-                  <p className="text-xs text-gray-400">Volumen</p>
-                  <div className="flex items-center gap-2 mt-1">
-                    <div className="flex-1 bg-gray-700 rounded-full h-2 overflow-hidden">
+              <div className="mt-4">
+                <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
+                  <p className="text-xs text-gray-400 mb-2">Volumen de Audio</p>
+                  <div className="flex items-center gap-3">
+                    <div className="flex-1 bg-gray-700 rounded-full h-3 overflow-hidden">
                       <div
                         className="bg-gradient-to-r from-purple-500 to-blue-500 h-full transition-all duration-100"
                         style={{ width: `${audioVolume * 100}%` }}
                       />
                     </div>
-                    <span className="text-xs text-purple-400">
+                    <span className="text-sm text-purple-400 font-medium min-w-[45px]">
                       {Math.round(audioVolume * 100)}%
                     </span>
                   </div>
