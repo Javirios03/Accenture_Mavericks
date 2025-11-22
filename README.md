@@ -45,6 +45,7 @@ Crea un archivo `.env` en el directorio raíz con las siguientes variables:
 ```
 ELEVENLABS_AGENT_ID=your_agent_id_here
 ELEVENLABS_API_KEY=your_api_key_here
+MONGODB_URI=your_mongodb_connection_string_here
 ```
 
 Obtén tu API key desde tu cuenta de ElevenLabs, para el agente específico (o contáctanos para obtener acceso a nuestro agente, temporalmente).
