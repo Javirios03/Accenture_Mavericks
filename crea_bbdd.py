@@ -1,9 +1,10 @@
 from pymongo import MongoClient, errors
 import random
 import string
+import os
 
 # Conexión a MongoDB
-uri = "mongodb+srv://javierriosmontes_db_user:FKxFGWWMhsZMCycb@accenturecluster.zfw78s2.mongodb.net/?appName=AccentureCluster"
+uri = os.getenv("MONGO_URI")
 client = MongoClient(uri)
 
 def generar_usuario(nombre, apellido, existentes):

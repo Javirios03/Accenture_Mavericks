@@ -6,9 +6,10 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from xgboost import XGBRegressor  # pip install xgboost
+import os
 
 # ------------------ Mongo ------------------ #
-uri = "mongodb+srv://gabriellazovsky_db_user:67PdWTyuQV8tlRYR@clustermaverick.cymy94z.mongodb.net/?retryWrites=true&w=majority"
+uri = os.getenv("MONGO_URI")
 client = MongoClient(uri)
 
 def obtener_clientes():

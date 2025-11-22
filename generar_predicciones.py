@@ -8,9 +8,10 @@ from xgboost import XGBRegressor
 import json
 from datetime import datetime, timedelta
 import random
+import os
 
 # Conexión a MongoDB
-uri = "mongodb+srv://javierriosmontes_db_user:FKxFGWWMhsZMCycb@accenturecluster.zfw78s2.mongodb.net/?appName=AccentureCluster"
+uri = os.getenv("MONGO_URI")
 client = MongoClient(uri)
 
 FEATURES = [
