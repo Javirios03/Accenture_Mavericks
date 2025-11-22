@@ -2,7 +2,6 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
-import Modal from "./components/Modal";
 import VoiceAgent from "./components/VoiceAgent";
 
 export default function App() {
